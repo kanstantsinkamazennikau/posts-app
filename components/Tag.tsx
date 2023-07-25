@@ -13,7 +13,7 @@ export default function Tag({ value, onDelete }: TagProps) {
         onClick={onDelete}
         className="cursor-pointer text-red-500"
       />
-      <span>{value}</span>
+      <span>#{value}</span>
     </div>
   );
 }

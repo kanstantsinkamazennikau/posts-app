@@ -57,8 +57,6 @@ export default function PostForm({ currentUser }: PostFormProps) {
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
       setIsLoading(true);
-      console.log(tagsArray);
-
       await axios.post("/api/user-posts", {
         ...data,
         tags: tagsArray,

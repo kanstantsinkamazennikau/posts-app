@@ -39,7 +39,7 @@ export default function TagsInput({
 
       setTagsArray((prevState) => {
         if (prevState.includes(tag)) {
-          toast.warn(`Tag "${tag}" already exists`);
+          toast.warn(`Tag "#${tag}" already exists`);
           return [...prevState];
         }
         return [...prevState, tag];
