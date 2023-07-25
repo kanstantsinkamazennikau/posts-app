@@ -37,7 +37,7 @@ export default async function Home({
   }
 
   return (
-    <main className="masonry">
+    <main className={`masonry ${posts.length < 3 && "flex"}`}>
       {!!posts.length ? (
         posts.map((post) => <PostCard key={post.id} post={post} />)
       ) : (
